@@ -1,38 +1,66 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-package com.mycompany.instituicao;
-
-/**
- *
- * @author Bruno Stefanello
- */
+package controller;
 public class Instituicao {
 
     public int keyAluno;
     public boolean aluno;
     public boolean financeiro;
     public boolean curso;
-    public boolean lagradouro;
+    public boolean logradouro;
     public boolean biblioteca;
     public boolean juridico;
-    public String emailInstituicao;
-
-    public void cadastrarCurso() {
+    public boolean emailInstituicao;
+    
+    
+    
+    public void validaSetores(String setor){
+        switch (setor) {
+            case "aluno":
+                if (aluno == true) {
+                    System.out.println("Esse setor existe dentro desta instituição");
+                } else {
+                    System.out.println("Esse setor não existe dentro desta instituição");
+                }
+                break;
+            case "financeiro":
+                if (financeiro == true) {
+                    System.out.println("Esse setor existe dentro desta instituição");
+                } else {
+                    System.out.println("Esse setor não existe dentro desta instituição");
+                }
+                break;
+            case "curso":
+                if (curso == true) {
+                    System.out.println("Esse setor existe dentro desta instituição");
+                } else {
+                    System.out.println("Esse setor não existe dentro desta instituição");
+                }
+                break;
+            case "logradouro":
+                if (logradouro == true) {
+                    System.out.println("Esse setor existe dentro desta instituição");
+                } else {
+                    System.out.println("Esse setor não existe dentro desta instituição");
+                }
+                break;
+            case "biblioteca":
+                if (biblioteca == true) {
+                    System.out.println("Esse setor existe dentro desta instituição");
+                } else {
+                    System.out.println("Esse setor não existe dentro desta instituição");
+                }
+                break;
+            case "juridico":
+                if (juridico == true) {
+                    System.out.println("Esse setor existe dentro desta instituição");
+                } else {
+                    System.out.println("Esse setor não existe dentro desta instituição");
+                }         
+                break;
+            default:
+                System.out.println("O setor informado não existe no corpo acadêmico desta instituição");
+        }
+    
     }
 
-    public void cadastrarAluno() {
-    }
-
-    public void cadastrarFuncionario() {
-    }
-
-    public void cadastrarFinanceiro() {
-    }
-
-    public void cadastrarLivro() {
-    }
-
-    public void cadastrarEmail() {
-    }
+    
 }
