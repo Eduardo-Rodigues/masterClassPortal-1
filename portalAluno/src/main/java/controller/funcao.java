@@ -3,7 +3,7 @@
  * Analista Responsável:  Joao Florisvaldo
  * Desenvolvedor: Eduardo
  */
-package com.mycompany.tipofuncao;
+package controller;
 
 /**
  *

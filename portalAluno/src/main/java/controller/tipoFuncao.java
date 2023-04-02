@@ -14,7 +14,9 @@ public class tipoFuncao {
     public int codigofuncao;
     public String setorfuncao;
     
-    public void cadastrarFuncao() {
+    public static void cadastrarFuncao(String[] args) {
+        System.out.println("Em Desenvolvimento");
+        Menu.main(args);
 
     }
     public void cadastrarSetor() {

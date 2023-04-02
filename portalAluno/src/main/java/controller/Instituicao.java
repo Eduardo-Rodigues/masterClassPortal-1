@@ -1,18 +1,24 @@
-package controller;
-public class Instituicao {
+/*Classe : Instituição
+Analista Responsável:  Bruno
+Desenvolvedor: João Contini
+*/
 
-    public int keyAluno;
-    public boolean aluno;
-    public boolean financeiro;
-    public boolean curso;
-    public boolean logradouro;
-    public boolean biblioteca;
-    public boolean juridico;
-    public boolean emailInstituicao;
+package controller;
+
+import java.util.Scanner;
+
+public class Instituicao {
     
-    
-    
-    public void validaSetores(String setor){
+    public static void validaSetores(String[] main){
+        boolean aluno = false;
+        boolean financeiro = false;
+        boolean curso = false;
+        boolean logradouro = false;
+        boolean biblioteca = false;
+        boolean juridico = false;
+        Scanner ler = new Scanner(System.in);
+        String setor;
+        setor = ler.next();
         switch (setor) {
             case "aluno":
                 if (aluno == true) {
@@ -59,8 +65,5 @@ public class Instituicao {
             default:
                 System.out.println("O setor informado não existe no corpo acadêmico desta instituição");
         }
-    
     }
-
-    
 }

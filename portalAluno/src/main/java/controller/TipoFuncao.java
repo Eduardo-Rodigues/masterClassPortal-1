@@ -4,9 +4,10 @@
  * Desenvolvedor: Eduardo
  */
 
-package com.mycompany.tipofuncao;
+package controller;
 
-import com.mycompany.empresa.funcao;
+import controller.funcao;
+
 import java.util.ArrayList;
 import java.util.List;
 

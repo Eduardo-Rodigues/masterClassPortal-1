@@ -18,4 +18,8 @@ public class FormaPagamento {
     public void gerarComprovante(){
         
     }
+    public static void registroPagamento(String[] args){
+        System.out.println("Em Desenvolvimento");
+        Menu.main(args);
+    }
 }

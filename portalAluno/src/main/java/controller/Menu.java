@@ -6,10 +6,10 @@ public class Menu {
         System.out.println("\n\n\n\nOlá, bem vindo ao MasterClass, seu aluno Online melhorado!!");
         System.out.println("Escolha uma das opções abaixo");
         System.out.println("1 - Cadastrar um Aluno");
-        System.out.println("2 - Cadastrar uma Instituição");
-        System.out.println("3 - Cadastrar um Cursos");
-        System.out.println("4 - Cadastrar uma Pessoa");
-        System.out.println("5 - Cadastrar um Setor");
+        System.out.println("2 - Validacao de Setores");
+        System.out.println("3 - Financeiro");
+        System.out.println("4 - Tipo Funcao");
+        System.out.println("5 - Setor");
         System.out.println("6 - Cadastrar um Financeiro");
         System.out.println("7 - Cadastrar uma Forma de pagamento");
         System.out.println("0 - Sair");
@@ -19,16 +19,16 @@ public class Menu {
         valor = ler.nextInt();
         switch (valor) {
             case 1:
-                System.out.println("Parabéns você escolheu cadastrar um Aluno!");
+                aluno.main(args);
                 break;
             case 2:
-                System.out.println("Parabéns você escolheu cadastrar uma Instituição!");
+                Instituicao.validaSetores(args);
                 break;
             case 3:
-                System.out.println("Parabéns você escolheu cadastrar um Cursos!");
+                tipoFuncao.cadastrarFuncao(args);
                 break;
             case 4:
-                System.out.println("Parabéns você escolheu cadastrar uma Pessoa!");
+                cadastroPessoas.cadastro(args);
                 break;
             case 5:
                 System.out.println("Parabéns você escolheu cadastrar um Setor!");

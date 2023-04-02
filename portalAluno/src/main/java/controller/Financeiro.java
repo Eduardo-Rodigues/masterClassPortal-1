@@ -1,24 +1,22 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Classe : Financeiro
+Analista Responsável:  Renan
+Desenvolvedor: Bruno
  */
 
-package com.mycompany.trabalho;
+package controller;
 
-/**
- *
- * @author aluno
- */
 public class Financeiro {
     
     private int numMensalidade;
     public double mensalidade;
     public int pagamento;
     private int notaFiscal;
-//    public FormaPagamento formaPag;
-//    public Aluno alun;
+
     
-    public Financeiro(){
-        System.out.println("...");
+    public static void financeiro(String[] args) {
+        System.out.println("Em Desenvolvimento");
+        Menu.main(args);
     }
     
     public void realizarPagamento(){
