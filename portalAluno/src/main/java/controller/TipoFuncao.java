@@ -1,5 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Classe : TipoFuncao
+ * Analista Responsável:  Joao Florisvaldo
+ * Desenvolvedor: Eduardo
  */
 
 package com.mycompany.tipofuncao;
