@@ -9,7 +9,7 @@ package controller;
  *Analista Responsável:  João Contini
  *Desenvolvedor: Joao Florisvaldo
  */
-public class alunoDados {
+public class AlunoDados {
     private int registroAcademico;
     private String disciplina;
     private String turno;
