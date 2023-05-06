@@ -9,7 +9,7 @@ package controller;
  *
  * @author eduro
  */
-public class funcao {
+public class Funcao {
     private String nomeFuncao;
     private String descricaoFuncao;
 
