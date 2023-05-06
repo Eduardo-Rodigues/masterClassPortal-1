@@ -8,7 +8,7 @@ package controller;
  *
  * @author joaovitor
  */
-public class cadastroPessoas {
+public class CadastroPessoas {
     public static void cadastro(String[] args) {
         System.out.println("Em Desenvolvimento");
         Menu.main(args);
