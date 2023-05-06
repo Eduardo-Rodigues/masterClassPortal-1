@@ -4,7 +4,7 @@ package controller;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class aluno {
+public class Aluno {
     
     public static void main(String[] args) {
         ArrayList<alunoDados> alunos = new ArrayList();
