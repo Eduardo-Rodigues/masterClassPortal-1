@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Aluno {
     
     public static void main(String[] args) {
-        ArrayList<alunoDados> alunos = new ArrayList();
+        ArrayList<AlunoDados> alunos = new ArrayList();
         Scanner ler = new Scanner(System.in);
 
         System.out.println("Informe o RA do aluno: (ex: 00241717)");
