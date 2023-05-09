@@ -28,7 +28,7 @@ public class aluno {
         System.out.println("Informe a Nota: (ex: 3)");
         double setNota = ler.nextInt();
 
-        System.out.println("Informe a  carga horaria do curso: (ex: fulano@unipar.com)");
+        System.out.println("Informe o email do aluno: (ex: fulano@unipar.com)");
         String setEA = ler.next();
         
         /*int registroAcademico, String disciplina, String turno, String situacaoAcademica, int presenca, double nota, String emailAcademico*/
