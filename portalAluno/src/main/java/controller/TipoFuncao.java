@@ -9,7 +9,7 @@ package controller;
  *
  * @author aluno
  */
-public class TipoFuncao {
+public class tipoFuncao {
     public String nomefuncao;
     public int codigofuncao;
     public String setorfuncao;
