@@ -3,21 +3,20 @@ package controller;
 import java.util.*;
 
 public class Pessoa {
-
-    public String NomeSobrenome;
+    protected String nomeSobrenome;
     protected String CPF;
-    public int registroGeral;
-    public String tipoFuncao;
-    public Date dataNasc;
-    public Date dataRegistro;
-    public String email;
-    private String telefone;
-    public boolean pcd;
-    private String genero;
-    private String endereco;
+    protected int registroGeral;
+    protected String tipoFuncao;
+    protected Date dataNasc;
+    protected Date dataRegistro;
+    protected String email;
+    protected String telefone;
+    protected boolean pcd;
+    protected String genero;
+    protected String endereco;
 
-    public void adicinarPessoa(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
-        this.NomeSobrenome = NomeSobrenome;
+    public Pessoa(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
+        this.nomeSobrenome = nomeSobrenome;
         this.CPF = CPF;
         this.registroGeral = registroGeral;
         this.tipoFuncao = tipoFuncao;
@@ -29,35 +28,7 @@ public class Pessoa {
         this.genero = genero;
         this.endereco = endereco;
     }
-
-    public void editarPessoa(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
-        this.NomeSobrenome = NomeSobrenome;
-        this.CPF = CPF;
-        this.registroGeral = registroGeral;
-        this.tipoFuncao = tipoFuncao;
-        this.dataNasc = dataNasc;
-        this.dataRegistro = dataRegistro;
-        this.email = email;
-        this.telefone = telefone;
-        this.pcd = pcd;
-        this.genero = genero;
-        this.endereco = endereco;
-    }
-
-    public void excluirPessoa(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
-        this.NomeSobrenome = null;
-        this.CPF = null;
-        this.registroGeral = (Integer) null;
-        this.tipoFuncao = null;
-        this.dataNasc = null;
-        this.dataRegistro = null;
-        this.email = null;
-        this.telefone = null;
-        this.pcd = (Boolean) null;
-        this.genero = null;
-        this.endereco = null;
-    }
-
+    
     public String getTelefone() {
         return telefone;
     }
@@ -70,15 +41,43 @@ public class Pessoa {
         return endereco;
     }
 
-    public void setTelefone() {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public void setGenero() {
+    public void setGenero(String genero) {
         this.genero = genero;
     }
 
-    public void setEndereco() {
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public void editarPessoa(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
+        this.nomeSobrenome = nomeSobrenome;
+        this.CPF = CPF;
+        this.registroGeral = registroGeral;
+        this.tipoFuncao = tipoFuncao;
+        this.dataNasc = dataNasc;
+        this.dataRegistro = dataRegistro;
+        this.email = email;
+        this.telefone = telefone;
+        this.pcd = pcd;
+        this.genero = genero;
+        this.endereco = endereco;
+    }
+
+    public void excluirPessoa() {
+        this.nomeSobrenome = null;
+        this.CPF = null;
+        this.registroGeral = 0;
+        this.tipoFuncao = null;
+        this.dataNasc = null;
+        this.dataRegistro = null;
+        this.email = null;
+        this.telefone = null;
+        this.pcd = false;
+        this.genero = null;
+        this.endereco = null;
     }
 }
