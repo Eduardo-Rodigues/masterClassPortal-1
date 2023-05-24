@@ -26,7 +26,6 @@ public class Reitor extends Funcionario {
         this.departamento = departamento;
     }
 
-    @Override
     public void editar(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco, String cargo, double salario) {
         super.editar(nomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco, cargo, salario);
     }
