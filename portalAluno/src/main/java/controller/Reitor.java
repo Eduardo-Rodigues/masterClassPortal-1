@@ -39,7 +39,6 @@ public class Reitor extends Funcionario {
     @Override
     public String toString() {
         return super.toString() +
-                ", departamento='" + departamento + '\'' +
-                '}';
+                "\nDepartamento: " + departamento;
     }
 }
