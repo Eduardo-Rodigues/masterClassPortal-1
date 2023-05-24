@@ -28,7 +28,7 @@ public class TipoFuncao {
         Scanner lerInput = new Scanner(System.in);
         System.out.print("Digite o código da função que deseja editar: \nSe não souber vá até a opção Exibir Função. ");
         int indice = lerInput.nextInt();
-        lerInput.nextLine(); // Consumir a quebra de linha
+        lerInput.nextLine(); 
         if (indice >= 0 && indice < nomeFuncao.size()) {
             System.out.print("Digite o novo nome da função: ");
             String nome = lerInput.nextLine();
@@ -43,7 +43,7 @@ public class TipoFuncao {
         Scanner lerInput = new Scanner(System.in);
         System.out.print("Digite o código da função que deseja excluir: ");
         int indice = lerInput.nextInt();
-        lerInput.nextLine(); // Consumir a quebra de linha
+        lerInput.nextLine(); 
         if (indice >= 0 && indice < nomeFuncao.size()) {
             nomeFuncao.remove(indice);
             System.out.println("Função excluída com sucesso!");
