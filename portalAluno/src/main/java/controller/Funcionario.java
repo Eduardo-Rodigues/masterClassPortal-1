@@ -7,15 +7,20 @@ package controller;
 import java.util.Date;
 
 /**
- *
- * @author eduro
+ *  Analista responsável: Erick.
+ *  Desenvolvedor: Eduardo
+ * 
  */
 public class Funcionario extends Pessoa {
     private String cargo;
     private double salario;
+
+    public Funcionario(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
+        super(nomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
+    }
     
     public void adicionar(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco, String cargo, double salario) {
-        this.NomeSobrenome = NomeSobrenome;
+        this.nomeSobrenome = NomeSobrenome;
         this.CPF = CPF;
         this.registroGeral = registroGeral;
         this.tipoFuncao = tipoFuncao;
@@ -31,36 +36,34 @@ public class Funcionario extends Pessoa {
     }
 
     @Override
-    public void editar(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
-        editar(NomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
+    public void editarPessoa(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
+        super.editarPessoa(nomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
         this.cargo = cargo;
         this.salario = salario;
-        super.editar(NomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
     }
 
     @Override
-    public void excluir(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
+    public void excluirPessoa() {
+        super.excluirPessoa();
         this.cargo = null;
         this.salario = 0.0;
-        super.excluir(NomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
     }
     
     public String toString() {
         return "Funcionario{" +
-                "nomeSobrenome='" + this.getNomeSobrenome() + '\'' +
-                ", CPF='" + CPF + '\'' +
-                ", registroGeral=" + registroGeral +
-                ", tipoFuncao='" + tipoFuncao + '\'' +
-                ", dataNasc=" + dataNasc +
-                ", dataRegistro=" + dataRegistro +
-                ", email='" + email + '\'' +
-                ", telefone='" + this.getTelefone() + '\'' +
-                ", pcd=" + pcd +
-                ", genero='" + this.getGenero() + '\'' +
-                ", endereco='" + this.getEndereco() + '\'' +
-                ", cargo='" + cargo + '\'' +
-                ", salario=" + salario +
-                ' ';
+                "\n Nome: " + nomeSobrenome +
+                "\nCPF: " + CPF +
+                "\nRG: " + registroGeral +
+                "\n" + tipoFuncao  +
+                "\nData de Nascimento: " + dataNasc +
+                "\nData de registro: " + dataRegistro +
+                "\nEmail: " + email +
+                "\nTelefone:" + telefone +
+                "\nPCD: " + pcd +
+                "\n Genero" + genero +
+                "\n Endereço: " + endereco +
+                "\n Cargo:" + cargo +
+                "\n Salário: " + salario;
     }
 
     public String getCargo() {
