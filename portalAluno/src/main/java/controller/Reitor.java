@@ -13,11 +13,6 @@ import java.util.Date;
 public class Reitor extends Funcionario {
     private String departamento;
 
-    public Reitor(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco, String cargo, double salario, String departamento) {
-        super(nomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco, cargo, salario);
-        this.departamento = departamento;
-    }
-
     public String getDepartamento() {
         return departamento;
     }
@@ -26,19 +21,15 @@ public class Reitor extends Funcionario {
         this.departamento = departamento;
     }
 
-    public void editar(String nomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco, String cargo, double salario) {
-        super.editar(nomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco, cargo, salario);
-    }
-
     @Override
-    public void excluirPessoa() {
-        super.excluirPessoa();
-        this.departamento = null;
+    public void editar(String NomeSobrenome, String CPF, int registroGeral, String tipoFuncao, Date dataNasc, Date dataRegistro, String email, String telefone, boolean pcd, String genero, String endereco) {
+        super.editar(NomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
     }
 
     @Override
     public String toString() {
         return super.toString() +
-                "\nDepartamento: " + departamento;
+                ", departamento='" + departamento + '\'' +
+                '}';
     }
 }

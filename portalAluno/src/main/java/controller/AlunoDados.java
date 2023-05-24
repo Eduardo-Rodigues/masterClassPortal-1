@@ -10,20 +10,30 @@ package controller;
     private int registroAcademico;
     private String disciplina;
     private String turno;
-    private String situacaoAcademica;
-    private int presenca;
-    private double nota;
     private String emailAcademico;
+    private String nome;
+    private String periodo;
+    private String genero;
+    private boolean pcd;
+    private String cpf;
+    private String telefone;
+    private String endereco;
 
-public AlunoDados(int registroAcademico, String disciplina, String turno, String situacaoAcademica, int presenca, double nota, String emailAcademico) {
-    this.registroAcademico = registroAcademico;
-    this.disciplina = disciplina;
-    this.turno = turno;
-    this.situacaoAcademica = situacaoAcademica;
-    this.presenca = presenca;
-    this.nota = nota;
-    this.emailAcademico = emailAcademico;
-}
+    public AlunoDados(int registroAcademico, String disciplina, String turno, String emailAcademico, String nome, String periodo, String genero, boolean pcd, String cpf, String telefone, String endereco) {
+        this.registroAcademico = registroAcademico;
+        this.disciplina = disciplina;
+        this.turno = turno;
+        this.emailAcademico = emailAcademico;
+        this.nome = nome;
+        this.periodo = periodo;
+        this.genero = genero;
+        this.pcd = pcd;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
+
+
 
 public int getRegistroAcademico() {
     return registroAcademico;
@@ -49,30 +59,6 @@ public void setTurno(String turno) {
     this.turno = turno;
 }
 
-public String getSituacaoAcademica() {
-    return situacaoAcademica;
-}
-
-public void setSituacaoAcademica(String situacaoAcademica) {
-    this.situacaoAcademica = situacaoAcademica;
-}
-
-public int getPresenca() {
-    return presenca;
-}
-
-public void setPresenca(int presenca) {
-    this.presenca = presenca;
-}
-
-public double getNota() {
-    return nota;
-}
-
-public void setNota(double nota) {
-    this.nota = nota;
-}
-
 public String getEmailAcademico() {
     return emailAcademico;
 }
@@ -81,14 +67,76 @@ public void setEmailAcademico(String emailAcademico) {
     this.emailAcademico = emailAcademico;
 }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getPeriodo() {
+        return periodo;
+    }
+
+    public void setPeriodo(String periodo) {
+        this.periodo = periodo;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public boolean isPcd() {
+        return pcd;
+    }
+
+    public void setPcd(boolean pcd) {
+        this.pcd = pcd;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+
+
 @Override
 public String toString() {
     return "RA: " + registroAcademico 
            + ", Disciplina: " + disciplina 
            + ", Turno: " + turno 
-           + ", Situacao Academica: " + situacaoAcademica 
-           + ", Quantidade de presenca: " + presenca 
-           + ", Nota: " + nota 
+          +", Endereço: "  + endereco
+            +", Nome: "  + nome
+            +", CPF: "  + cpf
+            +", Genero: "  + genero
+            +", PCD: "  + pcd
+            +", Periodo: "  + periodo
+            +", Telefone: "  + telefone
            + ", email academico: " + emailAcademico;
     }
     }

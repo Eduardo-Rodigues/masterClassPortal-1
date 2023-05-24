@@ -16,6 +16,7 @@ public class Menu {
                 + "\n5 - Setor"
                 + "\n6 - Cadastrar um Financeiro"
                 + "\n7 - Cadastrar uma Forma de pagamento"
+                + "\n8 - Cadastrar um Funcionário"
                 + "\n0 - Sair");
 
         int escolherOpcao = 1;
@@ -25,16 +26,18 @@ public class Menu {
                 escolherOpcao = Integer.parseInt(lerOpcao.nextLine());
                 switch (escolherOpcao) {
                     case 1:
-                        aluno.cadastrarAluno(args);
+                        Aluno aluno = new Aluno();
+                        aluno.dadosAlunos();
                         break;
                     case 2:
                         Instituicao.validaSetores(args);
                         break;
                     case 3:
-                        tipoFuncao.cadastrarFuncao(args);
+                        TipoFuncao tipoFuncao = new TipoFuncao();
+                        tipoFuncao.cadastrarFuncao();
                         break;
                     case 4:
-                        cadastroPessoas.cadastro(args);
+                        CadastroPessoas.cadastro(args);
                         break;
                     case 5:
                         System.out.println("Parabéns você escolheu cadastrar um Setor!");
@@ -44,6 +47,10 @@ public class Menu {
                         break;
                     case 7:
                         System.out.println("Parabéns você escolheu cadastrar uma Forma de pagamento!");
+                        break;
+                    case 8:
+                        Funcionario funcionario = new Funcionario();
+                        funcionario.dadosFuncionario();
                         break;
                     case 0:
                         System.out.println("Você escolheu sair, tchau tchau");
