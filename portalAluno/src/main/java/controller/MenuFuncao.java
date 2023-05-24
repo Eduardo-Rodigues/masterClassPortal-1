@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author eduro
  */
 public class MenuFuncao {
-    public static void main(String[] args) {
+    public static void menuFuncao(String[] args) {
         TipoFuncao menuTipoFuncao = new TipoFuncao();
         Scanner scanner = new Scanner(System.in);
         int opcao = -1;
