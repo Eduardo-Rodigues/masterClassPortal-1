@@ -1,4 +1,3 @@
-
 package controller;
 
 import java.util.ArrayList;
@@ -6,18 +5,19 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Aluno extends Pessoa {
+
     private String periodo;
-    
+
     public void dadosAlunos() {
         ArrayList<AlunoDados> alunos = new ArrayList();
         Scanner ler = new Scanner(System.in);
 
         System.out.println("Informe o nome do aluno: (ex: Antonio das Neves)");
         String setNome = ler.nextLine();
-        
+
         System.out.println("Informe o CPF do aluno: (ex: 11111111111)");
         String setCpf = ler.nextLine();
-        
+
         System.out.println("Informe o RA do aluno: (ex: 00241717)");
         int setRA = ler.nextInt();
 
@@ -28,32 +28,32 @@ public class Aluno extends Pessoa {
         String setTurno = ler.next();
 
         System.out.println("Informe o email do aluno: (ex: fulano@unipar.com)");
-        String setEA = ler.next();
-        
+        String setEmailAcademico = ler.next();
+
         System.out.println("Informe o telefone do aluno: (ex: 45999999999)");
         String setTelefone = ler.next();
-        
+
         System.out.println("Informe o endereco do aluno: (ex: Rua Presidente, 59)");
         String setEndereco = ler.next();
-        
+
         System.out.println("Informe o gênero do aluno: (ex: feminino)");
         String setGenero = ler.next();
-        
+
         System.out.println("Informe se o aluno é PCD: (sim/não)");
         boolean setPcd = ler.nextBoolean();
-        
+
         System.out.println("Informe o periodo do aluno: (ex: 1º ano)");
         String setPeriodo = ler.next();
-        
+
         /*int registroAcademico, String disciplina, String turno, String situacaoAcademica, int presenca, double nota, String emailAcademico*/
-        AlunoDados alunodados = new AlunoDados(setRA, setDisciplina, setTurno, setEA, setNome, setPeriodo, setGenero,setPcd, setCpf, setTelefone, setEndereco );
+        AlunoDados alunodados = new AlunoDados(setRA, setDisciplina, setTurno, setEmailAcademico, setNome, setPeriodo, setGenero, setPcd, setCpf, setTelefone, setEndereco);
         alunos.add(alunodados);
-        
+
         for (AlunoDados dados : alunos) {
             System.out.println(dados);
         }
-        
-        this.adicionar(setNome, setCpf, setRA, setEA, setTelefone, setPcd, setGenero, setEndereco, setPeriodo);
+
+        this.adicionar(setNome, setCpf, setRA, setEmailAcademico, setTelefone, setPcd, setGenero, setEndereco, setPeriodo);
     }
 
     @Override
@@ -66,8 +66,8 @@ public class Aluno extends Pessoa {
         editar(NomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
         super.editar(NomeSobrenome, CPF, registroGeral, tipoFuncao, dataNasc, dataRegistro, email, telefone, pcd, genero, endereco);
     }
-    
-    public void adicionar(String NomeSobrenome, String CPF, int registroGeral, String email, String telefone, boolean pcd, String genero, String endereco,  String periodo) {
+
+    public void adicionar(String NomeSobrenome, String CPF, int registroGeral, String email, String telefone, boolean pcd, String genero, String endereco, String periodo) {
         this.NomeSobrenome = NomeSobrenome;
         this.CPF = CPF;
         this.registroGeral = registroGeral;

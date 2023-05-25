@@ -61,6 +61,6 @@ public class Menu {
             } catch (NumberFormatException e) {
                 System.out.println("Você deve digitar um número\n");
             }
-        } 
+        }
     }
 }

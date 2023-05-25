@@ -1,12 +1,11 @@
 package controller;
 
 /**
- *Classe : Aluno
- *Analista Responsável:  João Contini
- *Desenvolvedor: Joao Florisvaldo
- *Desenvolvedor Atual: Roney Junior Prates
+ * Classe : Aluno Analista Responsável: João Contini Desenvolvedor: Joao
+ * Florisvaldo Desenvolvedor Atual: Roney Junior Prates
  */
-    public class AlunoDados {
+public class AlunoDados {
+
     private int registroAcademico;
     private String disciplina;
     private String turno;
@@ -33,39 +32,37 @@ package controller;
         this.endereco = endereco;
     }
 
+    public int getRegistroAcademico() {
+        return registroAcademico;
+    }
 
+    public void setRegistroAcademico(int registroAcademico) {
+        this.registroAcademico = registroAcademico;
+    }
 
-public int getRegistroAcademico() {
-    return registroAcademico;
-}
+    public String getDisciplina() {
+        return disciplina;
+    }
 
-public void setRegistroAcademico(int registroAcademico) {
-    this.registroAcademico = registroAcademico;
-}
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
+    }
 
-public String getDisciplina() {
-    return disciplina;
-}
+    public String getTurno() {
+        return turno;
+    }
 
-public void setDisciplina(String disciplina) {
-    this.disciplina = disciplina;
-}
+    public void setTurno(String turno) {
+        this.turno = turno;
+    }
 
-public String getTurno() {
-    return turno;
-}
+    public String getEmailAcademico() {
+        return emailAcademico;
+    }
 
-public void setTurno(String turno) {
-    this.turno = turno;
-}
-
-public String getEmailAcademico() {
-    return emailAcademico;
-}
-
-public void setEmailAcademico(String emailAcademico) {
-    this.emailAcademico = emailAcademico;
-}
+    public void setEmailAcademico(String emailAcademico) {
+        this.emailAcademico = emailAcademico;
+    }
 
     public String getNome() {
         return nome;
@@ -123,20 +120,18 @@ public void setEmailAcademico(String emailAcademico) {
         this.endereco = endereco;
     }
 
-
-
-@Override
-public String toString() {
-    return "RA: " + registroAcademico 
-           + ", Disciplina: " + disciplina 
-           + ", Turno: " + turno 
-          +", Endereço: "  + endereco
-            +", Nome: "  + nome
-            +", CPF: "  + cpf
-            +", Genero: "  + genero
-            +", PCD: "  + pcd
-            +", Periodo: "  + periodo
-            +", Telefone: "  + telefone
-           + ", email academico: " + emailAcademico;
+    @Override
+    public String toString() {
+        return "RA: " + registroAcademico
+                + ", Disciplina: " + disciplina
+                + ", Turno: " + turno
+                + ", Endereço: " + endereco
+                + ", Nome: " + nome
+                + ", CPF: " + cpf
+                + ", Genero: " + genero
+                + ", PCD: " + pcd
+                + ", Periodo: " + periodo
+                + ", Telefone: " + telefone
+                + ", email academico: " + emailAcademico;
     }
-    }
+}
