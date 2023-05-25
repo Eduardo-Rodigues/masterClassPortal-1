@@ -33,11 +33,11 @@ public class Menu {
                         Instituicao.validaSetores(args);
                         break;
                     case 3:
-                        TipoFuncao tipoFuncao = new TipoFuncao();
-                        tipoFuncao.cadastrarFuncao();
+                        System.out.println("Parabéns você escolheu Financeiro!");
                         break;
                     case 4:
-                        CadastroPessoas.cadastro(args);
+                        TipoFuncao tipoFuncao = new TipoFuncao();
+                        tipoFuncao.cadastrarFuncao();
                         break;
                     case 5:
                         System.out.println("Parabéns você escolheu cadastrar um Setor!");
