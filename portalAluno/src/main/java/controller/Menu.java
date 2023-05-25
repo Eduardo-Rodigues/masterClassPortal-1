@@ -7,20 +7,21 @@ public class Menu {
     public static void main(String[] args) {
         Scanner lerOpcao = new Scanner(System.in);
 
-        System.out.println("\n\nOlá, bem vindo ao MasterClass, seu aluno Online melhorado!!"
-                + "\nEscolha uma das opções abaixo:"
-                + "\n1 - Cadastrar um Aluno"
-                + "\n2 - Validacao de Setores"
-                + "\n3 - Financeiro"
-                + "\n4 - Tipo Funcao"
-                + "\n5 - Setor"
-                + "\n6 - Cadastrar um Financeiro"
-                + "\n7 - Cadastrar uma Forma de pagamento"
-                + "\n8 - Cadastrar um Funcionário"
-                + "\n0 - Sair");
-
         int escolherOpcao = 1;
         while (escolherOpcao != 0) {
+
+            System.out.println("\n\nOlá, bem vindo ao MasterClass, seu aluno Online melhorado!!"
+                    + "\nEscolha uma das opções abaixo:"
+                    + "\n1 - Cadastrar um Aluno"
+                    + "\n2 - Validacao de Setores"
+                    + "\n3 - Financeiro"
+                    + "\n4 - Tipo Funcao"
+                    + "\n5 - Setor"
+                    + "\n6 - Cadastrar um Financeiro"
+                    + "\n7 - Cadastrar uma Forma de pagamento"
+                    + "\n8 - Cadastrar um Funcionário"
+                    + "\n0 - Sair");
+
             try {
                 System.out.print("Informe o valor desejado: ");
                 escolherOpcao = Integer.parseInt(lerOpcao.nextLine());
@@ -43,7 +44,7 @@ public class Menu {
                         System.out.println("Parabéns você escolheu cadastrar um Setor!");
                         break;
                     case 6:
-                        System.out.println("Parabéns você escolheu cadastrar um Financeiro!");
+                        Financeiro.financeiro(args);
                         break;
                     case 7:
                         System.out.println("Parabéns você escolheu cadastrar uma Forma de pagamento!");
