@@ -11,19 +11,20 @@ import java.util.Scanner;
  * @author eduro
  */
 public class MenuFuncao {
-    public static void menuFuncao(String[] args) {
+
+    public static void main(String[] args) {
         TipoFuncao menuTipoFuncao = new TipoFuncao();
         Scanner scanner = new Scanner(System.in);
         int opcao = -1;
         while (opcao != 0) {
-            System.out.println("Escolha uma opção: " +
-                   "\n1 - Cadastrar função." +
-                   "\n2 - Excluir função." +
-                   "\n3 - Editar função." +
-                   "\n4 - Exibir funções cadastradas." +
-                   "\n0 - Sair" +
-                   "\nOpção:"
-                    );
+            System.out.println("Escolha uma opção:\n"
+                    + "1 - Cadastrar função\n"
+                    + "2 - Excluir função\n"
+                    + "3 - Editar função\n"
+                    + "4 - Exibir funções cadastradas\n"
+                    + "0 - Sair\n"
+                    + "Opção:"
+            );
             try {
                 opcao = Integer.parseInt(scanner.nextLine());
                 switch (opcao) {
@@ -49,7 +50,7 @@ public class MenuFuncao {
             } catch (NumberFormatException e) {
                 System.out.println("Opção inválida!");
             }
-            
+
         }
     }
 }
