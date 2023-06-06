@@ -1,8 +1,9 @@
 package controller;
 
 /**
- * Classe : Aluno Analista Responsável: João Contini Desenvolvedor: Joao
- * Florisvaldo Desenvolvedor Atual: Roney Junior Prates
+ * Classe AlunoDados: Analista Responsável:  Bruno
+Desenvolvedor que criou: João Florisvaldo
+Desenvolvedor que assumiu: Roney
  */
 public class AlunoDados {
 
