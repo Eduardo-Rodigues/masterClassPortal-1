@@ -31,7 +31,8 @@ public class Menu {
                         aluno.dadosAlunos();
                         break;
                     case 2:
-                        Instituicao.validaSetores(args);
+                        Instituicao instituicao = new Instituicao();
+                        instituicao.validaSetores();
                         break;
                     case 3:
                         System.out.println("Parabéns você escolheu Financeiro!");
