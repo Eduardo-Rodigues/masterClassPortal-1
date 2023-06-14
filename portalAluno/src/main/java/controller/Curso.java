@@ -4,18 +4,16 @@
  *Analista Responsável:  Eduardo
  *Desenvolvedor: Renan
  */
+
 package controller;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Curso {
 
-    private int cargaHoraria;
-    private String disciplina;
-    private String turnoCurso;
-    private String campusAcademico;
-    private ArrayList<Cadastro> cadastro;
+    private List<Cadastro> cadastro;
 
     public Curso() {
         cadastro = new ArrayList<>();
@@ -126,39 +124,7 @@ public class Curso {
         System.out.println("========= Curso editado com Sucesso!===========");
     }
 
-    public int getCargaHoraria() {
-        return cargaHoraria;
-    }
-
-    public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
-    }
-
-    public String getDisciplina() {
-        return disciplina;
-    }
-
-    public void setDisciplina(String disciplina) {
-        this.disciplina = disciplina;
-    }
-
-    public String getTurnoCurso() {
-        return turnoCurso;
-    }
-
-    public void setTurnoCurso(String turnoCurso) {
-        this.turnoCurso = turnoCurso;
-    }
-
-    public String getCampusAcademico() {
-        return campusAcademico;
-    }
-
-    public void setCampusAcademico(String campusAcademico) {
-        this.campusAcademico = campusAcademico;
-    }
-
-    private class Cadastro {
+    private static class Cadastro {
 
         private String campus;
         private String disciplina;
@@ -206,4 +172,3 @@ public class Curso {
 
     }
 }
-
