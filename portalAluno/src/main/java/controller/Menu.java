@@ -38,8 +38,8 @@ public class Menu {
                         System.out.println("Parabéns você escolheu Financeiro!");
                         break;
                     case 4:
-                        TipoFuncao tipoFuncao = new TipoFuncao();
-                        tipoFuncao.cadastrarFuncao();
+                        MenuFuncao tipoFuncao = new MenuFuncao();
+                        MenuFuncao.cadastrarFuncao();
                         break;
                     case 5:
                         System.out.println("Parabéns você escolheu cadastrar um Setor!");
