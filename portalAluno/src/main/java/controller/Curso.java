@@ -34,7 +34,7 @@ public class Curso {
             System.out.println("Informe qual é o campus do curso: ");
             String campus = scanner.nextLine();
 
-            System.out.println("Informe a carga horaria do curso: ");
+            System.out.println("Informe a carga horária do curso: ");
             int carga = scanner.nextInt();
             scanner.nextLine();
 
