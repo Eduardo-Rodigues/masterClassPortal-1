@@ -12,10 +12,10 @@ import java.util.Scanner;
  * @author eduro
  */
 public class CadastrarFuncao {
-    private RepositorioFuncao repository;
+    private RepositorioFuncao repositorio;
     
-    public CadastrarFuncao(RepositorioFuncao repository) {
-        this.repository = repository;
+    public CadastrarFuncao(RepositorioFuncao repositorio) {
+        this.repositorio = repositorio;
     }
     
     public void cadastrarFuncao() {
