@@ -13,11 +13,11 @@ public class Instituicao {
 
     public Instituicao() {
         setores = new Setor[]{
-            new Setor("aluno", false),
-            new Setor("financeiro", false),
-            new Setor("curso", false),
-            new Setor("biblioteca", false),
-            new Setor("juridico", false)
+            new Setor("aluno", true),
+            new Setor("financeiro", true),
+            new Setor("curso", true),
+            new Setor("biblioteca", true),
+            new Setor("juridico", true)
         };
     }
 
