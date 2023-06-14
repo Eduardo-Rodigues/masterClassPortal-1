@@ -39,7 +39,6 @@ public class Menu {
                         break;
                     case 4:
                         MenuFuncao tipoFuncao = new MenuFuncao();
-                        MenuFuncao.cadastrarFuncao();
                         break;
                     case 5:
                         System.out.println("Parabéns você escolheu cadastrar um Setor!");
