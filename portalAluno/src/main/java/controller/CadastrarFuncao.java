@@ -22,7 +22,7 @@ public class CadastrarFuncao {
         Scanner read = new Scanner(System.in).useLocale(new Locale("pt", "BR"));
         System.out.print("Digite o nome da função: ");
         String nome = read.nextLine();
-        repository.adicionarFuncao(nome);
+        repositorio.adicionarFuncao(nome);
         System.out.println("Função cadastrada com sucesso!");
     }
 
