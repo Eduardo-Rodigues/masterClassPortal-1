@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author eduro
  */
 public class EditarFuncao {
-  private RepositorioFuncao repositorio;
+    private RepositorioFuncao repositorio;
     
     public EditarFuncao(RepositorioFuncao repositorio) {
         this.repositorio = repositorio;
