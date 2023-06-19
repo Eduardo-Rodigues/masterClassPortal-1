@@ -1,6 +1,7 @@
 package controller;
 
 public class FormaPagamento {
+    
 
     private int numeroPagamento;
     public int pix;
@@ -11,20 +12,7 @@ public class FormaPagamento {
     public double deposito;
     public double transferencia;
 
-    public void gerarPix() {
-
-    }
-
-    public void gerarBoleto() {
-
-    }
-
-    public void gerarComprovante() {
-
-    }
-
-    public static void registroPagamento(String[] args) {
-        System.out.println("Em Desenvolvimento");
-        Menu.main(args);
+    public static void main(String[] args) {
+        System.out.println("Em Desenvolvimento!");
     }
 }
